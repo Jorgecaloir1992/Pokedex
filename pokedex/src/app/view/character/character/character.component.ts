@@ -52,7 +52,7 @@ export class CharacterComponent implements OnInit {
     });
   }
 
-  onSearch(event: Event): void {
+  onSearch(event: Event) {
     const inputElement = event.target as HTMLInputElement;
     const searchData = inputElement.value.toLowerCase();
     this.filteredList = this.pokemonList.filter((data: listaPokemon) =>
@@ -60,20 +60,20 @@ export class CharacterComponent implements OnInit {
     );
   }
 
-  onSelected(item: listaPokemon): void {
+  onSelected(item: listaPokemon) {
     this.selectedCard = item;
     this.show = true;
     console.log(this.selectedCard, ' elemento seleccionado');
     console.log(this.show);
   }
 
-  addFavorites(pokemon: listaPokemon): void {
+  addFavorites(pokemon: listaPokemon) {
     if (!this.favorites.includes(pokemon)) {
       this.favorites.push(pokemon);
     }
   }
 
-  changePage(page: number): void {
+  changePage(page: number) {
     this.currentPage = page;
     this.getCharacters();
   }
