@@ -3,7 +3,6 @@ import { CharacterService } from 'src/app/services/character.service';
 import { listaPokemon, PokemonDetails } from "../../../../pokemon.model";
 import { forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
-
 @Component({
   selector: 'app-character',
   templateUrl: './character.component.html',
