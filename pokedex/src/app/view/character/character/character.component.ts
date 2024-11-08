@@ -34,7 +34,7 @@ export class CharacterComponent implements OnInit {
       console.log(this.pokemonList, 'resultado');
     });
    } catch (error) {
-    console.log(error, 'alerrta!')
+    console.log(error, 'alerta!')
    }
   }
 
